@@ -1,0 +1,62 @@
+# Сгенерировано split.py из sections.json. Руками не править.
+entities:
+  - key: documents
+    title_ru: Документы
+    title_en: Documents
+    match: [documents]
+    synonyms: [документы, documents]
+  - key: counteragents
+    title_ru: Контрагенты
+    title_en: Counteragents
+    match: [counteragents]
+    synonyms: [контрагенты, контрагент, партнёр, counteragents]
+  - key: users
+    title_ru: Сотрудники и пользователи
+    title_en: Users
+    match: [users]
+    synonyms: [сотрудники, пользователи, users]
+  - key: organizations
+    title_ru: Организации и ящики
+    title_en: Organizations
+    match: [organizations]
+    synonyms: [организации, ящики, organizations]
+  - key: messages
+    title_ru: Сообщения
+    title_en: Messages
+    match: [messages]
+    synonyms: [сообщения, messages]
+  - key: signing
+    title_ru: Подписание
+    title_en: Signing
+    match: [signing]
+    synonyms: [подписание, подпись, подписать, signing]
+  - key: power_of_attorney
+    title_ru: Машиночитаемая доверенность
+    title_en: Power Of Attorney
+    match: [power_of_attorney]
+    synonyms: [машиночитаемая, доверенность, мчд, power_of_attorney]
+  - key: generation
+    title_ru: Генерация и разбор XML
+    title_en: Generation
+    match: [generation]
+    synonyms: [генерация, разбор, generation]
+  - key: events
+    title_ru: События
+    title_en: Events
+    match: [events]
+    synonyms: [события, events]
+  - key: printforms
+    title_ru: Печатные формы
+    title_en: Printforms
+    match: [printforms]
+    synonyms: [печатные, формы, печатная, форма, printforms]
+  - key: shelf
+    title_ru: Полка документов
+    title_en: Shelf
+    match: [shelf]
+    synonyms: [полка, документов, shelf]
+  - key: docflow
+    title_ru: Документооборот
+    title_en: Docflow
+    match: [docflow]
+    synonyms: [документооборот, этапы, статус, docflow]

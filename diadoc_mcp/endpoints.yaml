@@ -7,8 +7,7 @@ endpoints:
   path: /V3/AcquireCounteragent
   scope: diadoc
   safety: write
-  summary:  Отправляет контрагенту приглашение к партнерским отношениям. С помощью этого метода можно
-    добавить организацию в список контрагентов .
+  summary: Отправляет контрагенту приглашение к партнерским отношениям. С помощью этого метода можно добавить организацию в список контрагентов.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/AcquireCounteragent.html
   pagination: none
 - operation_id: diadoc_acquire_counteragent_result
@@ -18,8 +17,7 @@ endpoints:
   path: /V2/AcquireCounteragentResult
   scope: diadoc
   safety: read
-  summary:  Возвращает результат приглашения контрагента к партнерским отношениям, выполненного методом
-    AcquireCounteragent (V3) .
+  summary: Возвращает результат приглашения контрагента к партнерским отношениям, выполненного методом AcquireCounteragent (V3).
   doc: https://developer.kontur.ru/doc/diadoc-api/http/AcquireCounteragentResult.html
   pagination: none
 - operation_id: diadoc_add_counteragent_to_group
@@ -29,7 +27,7 @@ endpoints:
   path: /AddCounteragentToGroup
   scope: diadoc
   safety: write
-  summary:  Добавляет контрагента в группу .
+  summary: Добавляет контрагента в группу.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/AddCounteragentToGroup.html
   pagination: none
 - operation_id: diadoc_add_employee_power_of_attorney
@@ -39,7 +37,7 @@ endpoints:
   path: /V2/AddEmployeePowerOfAttorney
   scope: diadoc
   safety: write
-  summary:  Привязывает машиночитаемую доверенность (МЧД) к сотруднику .
+  summary: Привязывает машиночитаемую доверенность (МЧД) к сотруднику.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/AddEmployeePowerOfAttorney_V2.html
   pagination: none
 - operation_id: diadoc_break_with_counteragent
@@ -49,9 +47,7 @@ endpoints:
   path: /V2/BreakWithCounteragent
   scope: diadoc
   safety: destructive
-  summary:  Разрывает партнерские отношения с контрагентом , а также отзывает или отклоняет приглашения
-    к партнерству без вложения. Чтобы отозвать приглашение с вложением, сгенерируйте запрос методом GenerateRevocationRequestXml
-    (V2) и отправьте его методом PostMessagePatch (V4) .
+  summary: Разрывает партнерские отношения с контрагентом, а также отзывает или отклоняет приглашения к партнерству без вложения. Чтобы отозвать приглашение с вложением, сгенерируйте запрос методом GenerateRevocationRequestXml (V2) и отправьте его методом PostMessagePatch (V4).
   doc: https://developer.kontur.ru/doc/diadoc-api/http/BreakWithCounteragent.html
   pagination: none
 - operation_id: diadoc_can_post_message
@@ -61,7 +57,7 @@ endpoints:
   path: /CanPostMessage
   scope: diadoc
   safety: read
-  summary:  Проверяет возможность отправки сообщения с указанными параметрами.
+  summary: Проверяет возможность отправки сообщения с указанными параметрами.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/CanPostMessage.html
   pagination: none
 - operation_id: diadoc_can_send_invoice
@@ -71,8 +67,7 @@ endpoints:
   path: /CanSendInvoice
   scope: diadoc
   safety: read
-  summary:  Позволяет узнать, может ли указанный сертификат использоваться для подписания электронных
-    счетов-фактур (СФ), отправляемых из указанного ящика .
+  summary: Позволяет узнать, может ли указанный сертификат использоваться для подписания электронных счетов-фактур (СФ), отправляемых из указанного ящика.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/CanSendInvoice.html
   pagination: none
 - operation_id: diadoc_create_counteragent_group
@@ -82,7 +77,7 @@ endpoints:
   path: /CreateCounteragentGroup
   scope: diadoc
   safety: write
-  summary:  Создает группу контрагентов .
+  summary: Создает группу контрагентов.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/CreateCounteragentGroup.html
   pagination: none
 - operation_id: diadoc_create_department
@@ -92,8 +87,7 @@ endpoints:
   path: /admin/CreateDepartment
   scope: diadoc
   safety: write
-  summary:  Примечание Вызов метода доступен только администраторам организации. Создает подразделение
-    организации.
+  summary: Примечание Вызов метода доступен только администраторам организации. Создает подразделение организации.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/CreateDepartment_admin.html
   pagination: none
 - operation_id: diadoc_create_employee
@@ -103,9 +97,7 @@ endpoints:
   path: /CreateEmployee
   scope: diadoc
   safety: write
-  summary:  Примечание Вызов метода доступен только администраторам организации. Добавляет в организацию
-    сотрудника с указанными реквизитами. Если сотрудника с указанными реквизитами не существует, то метод
-    его создаст.
+  summary: Примечание Вызов метода доступен только администраторам организации. Добавляет в организацию сотрудника с указанными реквизитами. Если сотрудника с указанными реквизитами не существует, то метод его создаст.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/CreateEmployee.html
   pagination: none
 - operation_id: diadoc_delete
@@ -115,7 +107,7 @@ endpoints:
   path: /Delete
   scope: diadoc
   safety: destructive
-  summary:  Отмечает указанный документ как удаленный.
+  summary: Отмечает указанный документ как удаленный.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/Delete.html
   pagination: none
 - operation_id: diadoc_delete_counteragent_group
@@ -125,7 +117,7 @@ endpoints:
   path: /DeleteCounteragentGroup
   scope: diadoc
   safety: destructive
-  summary:  Удаляет группу контрагентов .
+  summary: Удаляет группу контрагентов.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/DeleteCounteragentGroup.html
   pagination: none
 - operation_id: diadoc_delete_department
@@ -135,8 +127,7 @@ endpoints:
   path: /admin/DeleteDepartment
   scope: diadoc
   safety: destructive
-  summary:  Примечание Вызов метода доступен только администраторам организации. Удаляет подразделение
-    организации.
+  summary: Примечание Вызов метода доступен только администраторам организации. Удаляет подразделение организации.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/DeleteDepartment_admin.html
   pagination: none
 - operation_id: diadoc_delete_employee
@@ -146,7 +137,7 @@ endpoints:
   path: /DeleteEmployee
   scope: diadoc
   safety: destructive
-  summary:  Примечание Вызов метода доступен только администраторам организации. Удаляет сотрудника организации.
+  summary: Примечание Вызов метода доступен только администраторам организации. Удаляет сотрудника организации.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/DeleteEmployee.html
   pagination: none
 - operation_id: diadoc_delete_employee_power_of_attorney
@@ -156,7 +147,7 @@ endpoints:
   path: /V2/DeleteEmployeePowerOfAttorney
   scope: diadoc
   safety: destructive
-  summary:  Отвязывает машиночитаемую доверенность (МЧД) от сотрудника .
+  summary: Отвязывает машиночитаемую доверенность (МЧД) от сотрудника.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/DeleteEmployeePowerOfAttorney_V2.html
   pagination: none
 - operation_id: diadoc_detect_custom_print_forms
@@ -166,8 +157,7 @@ endpoints:
   path: /DetectCustomPrintForms
   scope: diadoc
   safety: read
-  summary:  Определяет нестандартную печатную форму для документов из указанного списка. Получить печатную
-    форму документа можно с помощью метода GeneratePrintForm .
+  summary: Определяет нестандартную печатную форму для документов из указанного списка. Получить печатную форму документа можно с помощью метода GeneratePrintForm.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/DetectCustomPrintForms.html
   pagination: none
 - operation_id: diadoc_detect_document_titles
@@ -177,9 +167,7 @@ endpoints:
   path: /DetectDocumentTitles
   scope: diadoc
   safety: read
-  summary: ' Определяет возможные типы указанного документа . Метод можно использовать двумя способами:
-    POST-запрос с заполненным Request Body , GET-запрос с параметром nameOnShelf , если содержимое документа
-    было загружено на полку методом ShelfUpload (V2) .'
+  summary: 'Определяет возможные типы указанного документа. Метод можно использовать двумя способами: POST-запрос с заполненным Request Body, GET-запрос с параметром nameOnShelf, если содержимое документа было загружено на полку методом ShelfUpload (V2).'
   doc: https://developer.kontur.ru/doc/diadoc-api/http/DetectDocumentTitles.html
   pagination: none
 - operation_id: diadoc_dss_sign
@@ -189,7 +177,7 @@ endpoints:
   path: /DssSign
   scope: diadoc
   safety: write
-  summary:  Запускает операцию подписания файлов сертификатом без носителя.
+  summary: Запускает операцию подписания файлов сертификатом без носителя.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/DssSign.html
   pagination: none
 - operation_id: diadoc_dss_sign_result
@@ -199,8 +187,7 @@ endpoints:
   path: /DssSignResult
   scope: diadoc
   safety: read
-  summary:  Возвращает результат операции подписания файлов сертификатом без носителя, выполненной методом
-    DssSign .
+  summary: Возвращает результат операции подписания файлов сертификатом без носителя, выполненной методом DssSign.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/DssSignResult.html
   pagination: none
 - operation_id: diadoc_extended_signer_details_v2
@@ -210,8 +197,7 @@ endpoints:
   path: /V2/ExtendedSignerDetails
   scope: diadoc
   safety: read
-  summary: ="itemscope" itemtype="http://schema.org/Article"> ExtendedSignerDetails (GET) (V2)  Возвращает
-    дополнительные данные подписанта.
+  summary: ="itemscope" itemtype="http://schema.org/Article"> ExtendedSignerDetails (GET) (V2) Возвращает дополнительные данные подписанта.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/ExtendedSignerDetailsV2_get.html
   pagination: none
 - operation_id: diadoc_generate_document_protocol
@@ -221,7 +207,7 @@ endpoints:
   path: /GenerateDocumentProtocol
   scope: diadoc
   safety: read
-  summary:  Генерирует печатную форму протокола передачи документа и подпись к ней.
+  summary: Генерирует печатную форму протокола передачи документа и подпись к ней.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GenerateDocumentProtocol.html
   pagination: none
 - operation_id: diadoc_generate_document_zip
@@ -231,7 +217,7 @@ endpoints:
   path: /GenerateDocumentZip
   scope: diadoc
   safety: read
-  summary:  Формирует ZIP-архив, содержащий файлы документооборота указанного документа .
+  summary: Формирует ZIP-архив, содержащий файлы документооборота указанного документа.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GenerateDocumentZip.html
   pagination: none
 - operation_id: diadoc_generate_invoice_correction_request_xml
@@ -241,7 +227,7 @@ endpoints:
   path: /V2/GenerateInvoiceCorrectionRequestXml
   scope: diadoc
   safety: read
-  summary:  Генерирует файл уведомления об уточнении .
+  summary: Генерирует файл уведомления об уточнении.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GenerateInvoiceCorrectionRequestXml.html
   pagination: none
 - operation_id: diadoc_generate_print_form
@@ -251,7 +237,7 @@ endpoints:
   path: /GeneratePrintForm
   scope: diadoc
   safety: read
-  summary:  Генерирует печатную форму документа .
+  summary: Генерирует печатную форму документа.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GeneratePrintForm.html
   pagination: none
 - operation_id: diadoc_generate_print_form_from_attachment
@@ -261,9 +247,7 @@ endpoints:
   path: /GeneratePrintFormFromAttachment
   scope: diadoc
   safety: read
-  summary: ' Возвращает идентификатор, с помощью которого можно получить печатную форму документа по
-    его содержимому. Метод позволяет получить печатную форму для произвольного документа, содержимое которого
-    передано в теле запроса, даже если этот документ еще не был отправлен в Диадок. Это '
+  summary: Возвращает идентификатор, с помощью которого можно получить печатную форму документа по его содержимому. Метод позволяет получить печатную форму для произвольного документа, содержимое которого передано в теле запроса, даже если этот документ еще не был отправлен в Диадок. Это
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GeneratePrintFormFromAttachment.html
   pagination: none
 - operation_id: diadoc_generate_receipt_xml
@@ -273,7 +257,7 @@ endpoints:
   path: /V2/GenerateReceiptXml
   scope: diadoc
   safety: read
-  summary:  Генерирует файл извещения о получении (ИоП) .
+  summary: Генерирует файл извещения о получении (ИоП).
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GenerateReceiptXml.html
   pagination: none
 - operation_id: diadoc_generate_revocation_request_xml
@@ -283,7 +267,7 @@ endpoints:
   path: /V2/GenerateRevocationRequestXml
   scope: diadoc
   safety: read
-  summary:  Генерирует файл предложения об аннулировании .
+  summary: Генерирует файл предложения об аннулировании.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GenerateRevocationRequestXml.html
   pagination: none
 - operation_id: diadoc_generate_signature_rejection_xml
@@ -293,8 +277,7 @@ endpoints:
   path: /V2/GenerateSignatureRejectionXml
   scope: diadoc
   safety: read
-  summary:  Генерирует файл отказа в подписи для документа или отказа от предложения об аннулировании
-    документа.
+  summary: Генерирует файл отказа в подписи для документа или отказа от предложения об аннулировании документа.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GenerateSignatureRejectionXml.html
   pagination: none
 - operation_id: diadoc_generate_title_xml
@@ -304,7 +287,7 @@ endpoints:
   path: /GenerateTitleXml
   scope: diadoc
   safety: read
-  summary:  Генерирует файл титула формализованного документа .
+  summary: Генерирует файл титула формализованного документа.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GenerateTitleXml.html
   pagination: none
 - operation_id: diadoc_generate_tt_gis_fixation_cancellation_request
@@ -314,7 +297,7 @@ endpoints:
   path: /GenerateTtGisFixationCancellationRequest
   scope: diadoc
   safety: read
-  summary:  Генерирует документ для отмены сведений об отгрузке маркированных товаров .
+  summary: Генерирует документ для отмены сведений об отгрузке маркированных товаров.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GenerateTtGisFixationCancellationRequest.html
   pagination: none
 - operation_id: diadoc_generate_universal_message
@@ -324,7 +307,7 @@ endpoints:
   path: /GenerateUniversalMessage
   scope: diadoc
   safety: read
-  summary:  Генерирует файл универсального сообщения (УС).
+  summary: Генерирует файл универсального сообщения (УС).
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GenerateUniversalMessage.html
   pagination: none
 - operation_id: diadoc_get_box
@@ -334,7 +317,7 @@ endpoints:
   path: /GetBox
   scope: diadoc
   safety: read
-  summary:  Возвращает данные ящика по указанному идентификатору.
+  summary: Возвращает данные ящика по указанному идентификатору.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetBox.html
   pagination: none
 - operation_id: diadoc_get_content
@@ -344,7 +327,7 @@ endpoints:
   path: /GetContent
   scope: diadoc
   safety: read
-  summary:  Возвращает XSD-схему документа .
+  summary: Возвращает XSD-схему документа.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetContent.html
   pagination: none
 - operation_id: diadoc_get_counteragent
@@ -354,7 +337,7 @@ endpoints:
   path: /V3/GetCounteragent
   scope: diadoc
   safety: read
-  summary:  Возвращает данные контрагента по указанному идентификатору
+  summary: Возвращает данные контрагента по указанному идентификатору
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetCounteragent.html
   pagination: none
 - operation_id: diadoc_get_counteragent_certificates
@@ -364,7 +347,7 @@ endpoints:
   path: /V2/GetCounteragentCertificates
   scope: diadoc
   safety: read
-  summary:  Возвращает список сертификатов контрагента.
+  summary: Возвращает список сертификатов контрагента.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetCounteragentCertificates.html
   pagination: none
 - operation_id: diadoc_get_counteragent_events
@@ -374,7 +357,7 @@ endpoints:
   path: /V1/GetCounteragentEvents
   scope: diadoc
   safety: read
-  summary:  Возвращает список событий по изменению отношений с контрагентами .
+  summary: Возвращает список событий по изменению отношений с контрагентами.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetCounteragentEvents.html
   pagination: none
 - operation_id: diadoc_get_counteragent_group
@@ -384,7 +367,7 @@ endpoints:
   path: /GetCounteragentGroup
   scope: diadoc
   safety: read
-  summary:  Возвращает данные группы контрагентов по указанному идентификатору.
+  summary: Возвращает данные группы контрагентов по указанному идентификатору.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetCounteragentGroup.html
   pagination: none
 - operation_id: diadoc_get_counteragent_groups
@@ -394,7 +377,7 @@ endpoints:
   path: /GetCounteragentGroups
   scope: diadoc
   safety: read
-  summary:  Возвращает список групп контрагентов указанного ящика .
+  summary: Возвращает список групп контрагентов указанного ящика.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetCounteragentGroups.html
   pagination: none
 - operation_id: diadoc_get_counteragents
@@ -404,7 +387,7 @@ endpoints:
   path: /V3/GetCounteragents
   scope: diadoc
   safety: read
-  summary:  Выполняет поиск контрагентов по указанным параметрам.
+  summary: Выполняет поиск контрагентов по указанным параметрам.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetCounteragents.html
   pagination: none
 - operation_id: diadoc_get_counteragents_from_group
@@ -414,7 +397,7 @@ endpoints:
   path: /GetCounteragentsFromGroup
   scope: diadoc
   safety: read
-  summary:  Возвращает список контрагентов , состоящих в указанной группе .
+  summary: Возвращает список контрагентов, состоящих в указанной группе.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetCounteragentsFromGroup.html
   pagination: none
 - operation_id: diadoc_get_department
@@ -424,7 +407,7 @@ endpoints:
   path: /V2/GetDepartment
   scope: diadoc
   safety: read
-  summary:  Возвращает данные подразделения организации по указанному идентификатору.
+  summary: Возвращает данные подразделения организации по указанному идентификатору.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetDepartment_V2.html
   pagination: none
 - operation_id: diadoc_get_departments
@@ -434,8 +417,7 @@ endpoints:
   path: /admin/GetDepartments
   scope: diadoc
   safety: read
-  summary:  Примечание Вызов метода доступен только администраторам организации. Возвращает список подразделений
-    организации.
+  summary: Примечание Вызов метода доступен только администраторам организации. Возвращает список подразделений организации.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetDepartments_admin.html
   pagination: none
 - operation_id: diadoc_get_docflow_events
@@ -445,8 +427,7 @@ endpoints:
   path: /V4/GetDocflowEvents
   scope: diadoc
   safety: read
-  summary:  Возвращает список событий, произошедших с документами . Под событием понимается появление
-    нового документа или изменение уже существующего.
+  summary: Возвращает список событий, произошедших с документами. Под событием понимается появление нового документа или изменение уже существующего.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetDocflowEvents_V4.html
   pagination: none
 - operation_id: diadoc_get_docflows_by_packet_id
@@ -456,7 +437,7 @@ endpoints:
   path: /V4/GetDocflowsByPacketId
   scope: diadoc
   safety: read
-  summary:  Возвращает список документов , находящихся в пакете .
+  summary: Возвращает список документов, находящихся в пакете.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetDocflowsByPacketId_V4.html
   pagination: none
 - operation_id: diadoc_get_docflows
@@ -466,9 +447,7 @@ endpoints:
   path: /V4/GetDocflows
   scope: diadoc
   safety: read
-  summary: ' Возвращает список документов с информацией о документообороте по их идентификаторам. Для
-    каждого документа возвращаются данные, которые характеризуют его текущее состояние: информация о документообороте
-    и метаданные .'
+  summary: 'Возвращает список документов с информацией о документообороте по их идентификаторам. Для каждого документа возвращаются данные, которые характеризуют его текущее состояние: информация о документообороте и метаданные.'
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetDocflows_V4.html
   pagination: none
 - operation_id: diadoc_get_document
@@ -478,7 +457,7 @@ endpoints:
   path: /V3/GetDocument
   scope: diadoc
   safety: read
-  summary:  Возвращает данные документа по указанному идентификатору.
+  summary: Возвращает данные документа по указанному идентификатору.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetDocument.html
   pagination: none
 - operation_id: diadoc_get_document_actions
@@ -488,8 +467,7 @@ endpoints:
   path: /GetDocumentActions
   scope: diadoc
   safety: read
-  summary:  Возвращает список действий, доступных текущему пользователю для указанного документа , шаблона
-    или черновика .
+  summary: Возвращает список действий, доступных текущему пользователю для указанного документа, шаблона или черновика.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetDocumentActions.html
   pagination: none
 - operation_id: diadoc_get_document_history
@@ -499,7 +477,7 @@ endpoints:
   path: /GetDocumentHistory
   scope: diadoc
   safety: read
-  summary:  Возвращает историю событий по указанному документу , шаблону или черновику .
+  summary: Возвращает историю событий по указанному документу, шаблону или черновику.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetDocumentHistory.html
   pagination: none
 - operation_id: diadoc_get_document_types
@@ -509,7 +487,7 @@ endpoints:
   path: /V2/GetDocumentTypes
   scope: diadoc
   safety: read
-  summary:  Возвращает список типов документов, доступных в ящике .
+  summary: Возвращает список типов документов, доступных в ящике.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetDocumentTypes.html
   pagination: none
 - operation_id: diadoc_get_documents
@@ -519,7 +497,7 @@ endpoints:
   path: /V3/GetDocuments
   scope: diadoc
   safety: read
-  summary:  Возвращает список документов , соответствующих заданным параметрам.
+  summary: Возвращает список документов, соответствующих заданным параметрам.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetDocuments.html
   pagination: none
 - operation_id: diadoc_get_documents_by_message_id
@@ -529,7 +507,7 @@ endpoints:
   path: /GetDocumentsByMessageId
   scope: diadoc
   safety: read
-  summary:  Возвращает список документов из указанного сообщения .
+  summary: Возвращает список документов из указанного сообщения.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetDocumentsByMessageId.html
   pagination: none
 - operation_id: diadoc_get_employee
@@ -539,8 +517,7 @@ endpoints:
   path: /GetEmployee
   scope: diadoc
   safety: read
-  summary:  Примечание Вызов метода доступен только администраторам организации. Возвращает данные сотрудника
-    организации по указанному идентификатору.
+  summary: Примечание Вызов метода доступен только администраторам организации. Возвращает данные сотрудника организации по указанному идентификатору.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetEmployee.html
   pagination: none
 - operation_id: diadoc_get_employee_powers_of_attorney
@@ -550,8 +527,7 @@ endpoints:
   path: /GetEmployeePowersOfAttorney
   scope: diadoc
   safety: read
-  summary: ' Возвращает список машиночитаемых доверенностей (МЧД), привязанных к сотруднику : как действующих,
-    так и истекших.'
+  summary: 'Возвращает список машиночитаемых доверенностей (МЧД), привязанных к сотруднику : как действующих, так и истекших.'
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetEmployeePowersOfAttorney.html
   pagination: none
 - operation_id: diadoc_get_employees
@@ -561,9 +537,7 @@ endpoints:
   path: /GetEmployees
   scope: diadoc
   safety: read
-  summary: ' Примечание Вызов метода доступен только администраторам организации. Возвращает список сотрудников
-    организации. В ответе метода вернутся все сотрудники организации: в списке будут перечислены сначала
-    зарегистрированные, а затем незарегистрированные сотрудники, упорядоченные по '
+  summary: 'Примечание Вызов метода доступен только администраторам организации. Возвращает список сотрудников организации. В ответе метода вернутся все сотрудники организации: в списке будут перечислены сначала зарегистрированные, а затем незарегистрированные сотрудники, упорядоченные по'
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetEmployees.html
   pagination: none
 - operation_id: diadoc_get_entity_content
@@ -573,7 +547,7 @@ endpoints:
   path: /V4/GetEntityContent
   scope: diadoc
   safety: read
-  summary:  Возвращает содержимое указанной сущности .
+  summary: Возвращает содержимое указанной сущности.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetEntityContent.html
   pagination: none
 - operation_id: diadoc_get_event
@@ -583,7 +557,7 @@ endpoints:
   path: /V3/GetEvent
   scope: diadoc
   safety: read
-  summary:  Возвращает событие по указанному идентификатору.
+  summary: Возвращает событие по указанному идентификатору.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetEvent_V3.html
   pagination: none
 - operation_id: diadoc_get_generated_print_form
@@ -593,8 +567,7 @@ endpoints:
   path: /GetGeneratedPrintForm
   scope: diadoc
   safety: read
-  summary:  Генерирует печатную форму документа по идентификатору, полученному методом GeneratePrintFormFromAttachment
-    .
+  summary: Генерирует печатную форму документа по идентификатору, полученному методом GeneratePrintFormFromAttachment.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetGeneratedPrintForm.html
   pagination: none
 - operation_id: diadoc_get_invoice_correction_request_info
@@ -604,7 +577,7 @@ endpoints:
   path: /GetInvoiceCorrectionRequestInfo
   scope: diadoc
   safety: read
-  summary:  Возвращает информацию об указанном уведомлении об уточнении .
+  summary: Возвращает информацию об указанном уведомлении об уточнении.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetInvoiceCorrectionRequestInfo.html
   pagination: none
 - operation_id: diadoc_get_last_event
@@ -614,7 +587,7 @@ endpoints:
   path: /V2/GetLastEvent
   scope: diadoc
   safety: read
-  summary:  Возвращает последнее событие в ящике .
+  summary: Возвращает последнее событие в ящике.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetLastEvent_V2.html
   pagination: none
 - operation_id: diadoc_get_message
@@ -624,7 +597,7 @@ endpoints:
   path: /V6/GetMessage
   scope: diadoc
   safety: read
-  summary:  Возвращает данные сообщения по указанному идентификатору.
+  summary: Возвращает данные сообщения по указанному идентификатору.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetMessage_V6.html
   pagination: none
 - operation_id: diadoc_get_my_certificates
@@ -634,8 +607,7 @@ endpoints:
   path: /GetMyCertificates
   scope: diadoc
   safety: read
-  summary:  Возвращает список сертификатов , привязанных к текущему авторизованному пользователю . В
-    ответе метода вернутся только активные по сроку сертификаты пользователя.
+  summary: Возвращает список сертификатов, привязанных к текущему авторизованному пользователю. В ответе метода вернутся только активные по сроку сертификаты пользователя.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetMyCertificates.html
   pagination: none
 - operation_id: diadoc_get_my_employee
@@ -645,7 +617,7 @@ endpoints:
   path: /GetMyEmployee
   scope: diadoc
   safety: read
-  summary:  Возвращает данные сотрудника организации, от имени которого вызывается метод.
+  summary: Возвращает данные сотрудника организации, от имени которого вызывается метод.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetMyEmployee.html
   pagination: none
 - operation_id: diadoc_get_my_organizations
@@ -655,7 +627,7 @@ endpoints:
   path: /GetMyOrganizations
   scope: diadoc
   safety: read
-  summary:  Возвращает список организаций , в которых пользователь является сотрудником .
+  summary: Возвращает список организаций, в которых пользователь является сотрудником.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetMyOrganizations.html
   pagination: none
 - operation_id: diadoc_get_my_user
@@ -665,8 +637,7 @@ endpoints:
   path: /V2/GetMyUser
   scope: diadoc
   safety: read
-  summary:  Возвращает данные текущего авторизованного пользователя без списка сертификатов . Чтобы получить
-    информацию о сертификатах пользователя, используйте метод GetMyCertificates .
+  summary: Возвращает данные текущего авторизованного пользователя без списка сертификатов. Чтобы получить информацию о сертификатах пользователя, используйте метод GetMyCertificates.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetMyUser.html
   pagination: none
 - operation_id: diadoc_get_new_events
@@ -676,7 +647,7 @@ endpoints:
   path: /V8/GetNewEvents
   scope: diadoc
   safety: read
-  summary:  Возвращает ленту событий в ящике .
+  summary: Возвращает ленту событий в ящике.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetNewEvents_V8.html
   pagination: none
 - operation_id: diadoc_get_or_create_roaming_organization_by_fns_participant_id
@@ -686,7 +657,7 @@ endpoints:
   path: /GetOrCreateRoamingOrganizationByFnsParticipantId
   scope: diadoc
   safety: write
-  summary:  Находит или создает в Диадоке роуминговую организацию по идентификатору участника ЭДО.
+  summary: Находит или создает в Диадоке роуминговую организацию по идентификатору участника ЭДО.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetOrCreateRoamingOrganizationByFnsParticipantId.html
   pagination: none
 - operation_id: diadoc_get_organization
@@ -696,7 +667,7 @@ endpoints:
   path: /GetOrganization
   scope: diadoc
   safety: read
-  summary:  Возвращает данные организации по указанному идентификатору.
+  summary: Возвращает данные организации по указанному идентификатору.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetOrganization.html
   pagination: none
 - operation_id: diadoc_get_organization_features
@@ -706,7 +677,7 @@ endpoints:
   path: /GetOrganizationFeatures
   scope: diadoc
   safety: read
-  summary:  Возвращает список дополнительных функций организации .
+  summary: Возвращает список дополнительных функций организации.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetOrganizationFeatures.html
   pagination: none
 - operation_id: diadoc_get_organization_users
@@ -716,9 +687,7 @@ endpoints:
   path: /V2/GetOrganizationUsers
   scope: diadoc
   safety: read
-  summary:  Возвращает список всех пользователей организации. Обратите внимание, что метод возвращает
-    не сотрудников организации, а именно пользователей — то есть только учетные записи, прошедшие регистрацию
-    в Кабинете клиента . При этом сотрудники организации, учетная запись которых не бы
+  summary: Возвращает список всех пользователей организации. Обратите внимание, что метод возвращает не сотрудников организации, а именно пользователей — то есть только учетные записи, прошедшие регистрацию в Кабинете клиента. При этом сотрудники организации, учетная запись которых не бы
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetOrganizationUsers.html
   pagination: none
 - operation_id: diadoc_get_organizations_by_foreign_taxpayer_code
@@ -728,7 +697,7 @@ endpoints:
   path: /GetOrganizationsByForeignTaxpayerCode
   scope: diadoc
   safety: read
-  summary:  Возвращает данные организации по коду иностранного налогоплательщика.
+  summary: Возвращает данные организации по коду иностранного налогоплательщика.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetOrganizationsByForeignTaxpayerCode.html
   pagination: none
 - operation_id: diadoc_get_organizations_by_inn_kpp
@@ -738,7 +707,7 @@ endpoints:
   path: /GetOrganizationsByInnKpp
   scope: diadoc
   safety: read
-  summary:  Возвращает данные организации по ИНН.
+  summary: Возвращает данные организации по ИНН.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetOrganizationsByInnKpp.html
   pagination: none
 - operation_id: diadoc_get_organizations_by_inn_list
@@ -748,7 +717,7 @@ endpoints:
   path: /V2/GetOrganizationsByInnList
   scope: diadoc
   safety: read
-  summary:  Возвращает список организаций и их статус партнерства по списку ИНН.
+  summary: Возвращает список организаций и их статус партнерства по списку ИНН.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetOrganizationsByInnList.html
   pagination: none
 - operation_id: diadoc_get_partner_events
@@ -758,8 +727,7 @@ endpoints:
   path: /GetPartnerEvents
   scope: diadoc
   safety: read
-  summary:  Примечание Вызов метода доступен только технологическим партнерам . Возвращает список событий,
-    произошедших с документами во всех ящиках , доступных технологическому партнеру.
+  summary: Примечание Вызов метода доступен только технологическим партнерам. Возвращает список событий, произошедших с документами во всех ящиках, доступных технологическому партнеру.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetPartnerEvents.html
   pagination: none
 - operation_id: diadoc_get_power_of_attorney_content
@@ -769,7 +737,7 @@ endpoints:
   path: /V2/GetPowerOfAttorneyContent
   scope: diadoc
   safety: read
-  summary:  Возвращает содержимое файлов машиночитаемой доверенности (МЧД) и родительских доверенностей.
+  summary: Возвращает содержимое файлов машиночитаемой доверенности (МЧД) и родительских доверенностей.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetPowerOfAttorneyContent.html
   pagination: none
 - operation_id: diadoc_get_power_of_attorney_info
@@ -779,7 +747,7 @@ endpoints:
   path: /GetPowerOfAttorneyInfo
   scope: diadoc
   safety: read
-  summary:  Возвращает информацию о машиночитаемой доверенности (МЧД), отправленной с документом .
+  summary: Возвращает информацию о машиночитаемой доверенности (МЧД), отправленной с документом.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetPowerOfAttorneyInfo.html
   pagination: none
 - operation_id: diadoc_get_resolution_routes
@@ -789,8 +757,7 @@ endpoints:
   path: /GetResolutionRoutes
   scope: diadoc
   safety: read
-  summary:  Возвращает список всех неудаленных включенных маршрутов согласования для указанного ящика
-    . Метод вернет только те маршруты, которые в веб-интерфейсе Диадока имеют состояние «Включен».
+  summary: Возвращает список всех неудаленных включенных маршрутов согласования для указанного ящика. Метод вернет только те маршруты, которые в веб-интерфейсе Диадока имеют состояние «Включен».
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetResolutionRoutes.html
   pagination: none
 - operation_id: diadoc_get_roaming_operators
@@ -800,7 +767,7 @@ endpoints:
   path: /GetRoamingOperators
   scope: diadoc
   safety: read
-  summary:  Возвращает список операторов ЭДО и их функции.
+  summary: Возвращает список операторов ЭДО и их функции.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetRoamingOperators.html
   pagination: none
 - operation_id: diadoc_get_security_events
@@ -810,7 +777,7 @@ endpoints:
   path: /V1/GetSecurityEvents
   scope: diadoc
   safety: read
-  summary:  Возвращает список событий безопасности в ящике .
+  summary: Возвращает список событий безопасности в ящике.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetSecurityEvents.html
   pagination: none
 - operation_id: diadoc_get_signature_info
@@ -820,7 +787,7 @@ endpoints:
   path: /GetSignatureInfo
   scope: diadoc
   safety: read
-  summary:  Возвращает информацию о подписи и сертификате по указанным идентификаторам.
+  summary: Возвращает информацию о подписи и сертификате по указанным идентификаторам.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetSignatureInfo.html
   pagination: none
 - operation_id: diadoc_get_subscriptions
@@ -830,8 +797,7 @@ endpoints:
   path: /GetSubscriptions
   scope: diadoc
   safety: read
-  summary:  Примечание Вызов метода доступен только администраторам организации и пользователю, для которого
-    запрашиваются подписки. Возвращает информацию о подписках сотрудника организации на почтовые уведомления.
+  summary: Примечание Вызов метода доступен только администраторам организации и пользователю, для которого запрашиваются подписки. Возвращает информацию о подписках сотрудника организации на почтовые уведомления.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetSubscriptions.html
   pagination: none
 - operation_id: diadoc_get_workflows_settings
@@ -841,7 +807,7 @@ endpoints:
   path: /V2/GetWorkflowsSettings
   scope: diadoc
   safety: read
-  summary:  Возвращает свойства всех видов документооборота.
+  summary: Возвращает свойства всех видов документооборота.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/GetWorkflowsSettings.html
   pagination: none
 - operation_id: diadoc_move_documents
@@ -851,7 +817,7 @@ endpoints:
   path: /MoveDocuments
   scope: diadoc
   safety: write
-  summary:  Перемещает документы в указанное подразделение организации.
+  summary: Перемещает документы в указанное подразделение организации.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/MoveDocuments.html
   pagination: none
 - operation_id: diadoc_parse_gar_address
@@ -861,7 +827,7 @@ endpoints:
   path: /V1/ParseGarAddress
   scope: diadoc
   safety: read
-  summary:  Возвращает адрес объекта в государственном адресном реестре (ГАР).
+  summary: Возвращает адрес объекта в государственном адресном реестре (ГАР).
   doc: https://developer.kontur.ru/doc/diadoc-api/http/ParseGarAddress.html
   pagination: none
 - operation_id: diadoc_parse_revocation_request_xml
@@ -871,7 +837,7 @@ endpoints:
   path: /ParseRevocationRequestXml
   scope: diadoc
   safety: read
-  summary:  Парсит файл предложения об аннулировании .
+  summary: Парсит файл предложения об аннулировании.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/ParseRevocationRequestXml.html
   pagination: none
 - operation_id: diadoc_parse_signature_rejection_xml
@@ -881,7 +847,7 @@ endpoints:
   path: /ParseSignatureRejectionXml
   scope: diadoc
   safety: read
-  summary:  Парсит файл отказа в подписи .
+  summary: Парсит файл отказа в подписи.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/ParseSignatureRejectionXml.html
   pagination: none
 - operation_id: diadoc_parse_title_xml
@@ -891,7 +857,7 @@ endpoints:
   path: /ParseTitleXml
   scope: diadoc
   safety: read
-  summary:  Парсит файл титула формализованного документа .
+  summary: Парсит файл титула формализованного документа.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/ParseTitleXml.html
   pagination: none
 - operation_id: diadoc_parse_universal_message
@@ -901,9 +867,7 @@ endpoints:
   path: /ParseUniversalMessage
   scope: diadoc
   safety: read
-  summary:  Предупреждение Во время переходного периода метод не работает и возвращает ошибки — он будет
-    доступен только после окончания переходного периода. Для парсинга универсального сообщения во время
-    переходного периода используйте метод ParseUniversalMessageXml . Парсит файл универса
+  summary: Предупреждение Во время переходного периода метод не работает и возвращает ошибки — он будет доступен только после окончания переходного периода. Для парсинга универсального сообщения во время переходного периода используйте метод ParseUniversalMessageXml. Парсит файл универса
   doc: https://developer.kontur.ru/doc/diadoc-api/http/ParseUniversalMessage.html
   pagination: none
 - operation_id: diadoc_parse_universal_message_xml
@@ -913,7 +877,7 @@ endpoints:
   path: /ParseUniversalMessageXml
   scope: diadoc
   safety: read
-  summary:  Парсит файл универсального сообщения .
+  summary: Парсит файл универсального сообщения.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/ParseUniversalMessageXml.html
   pagination: none
 - operation_id: diadoc_post_message
@@ -923,7 +887,7 @@ endpoints:
   path: /V3/PostMessage
   scope: diadoc
   safety: write
-  summary:  Отправляет сообщение .
+  summary: Отправляет сообщение.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/PostMessage.html
   pagination: none
 - operation_id: diadoc_post_message_patch
@@ -933,7 +897,7 @@ endpoints:
   path: /V4/PostMessagePatch
   scope: diadoc
   safety: write
-  summary:  Отправляет дополнение к сообщению .
+  summary: Отправляет дополнение к сообщению.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/PostMessagePatch_V4.html
   pagination: none
 - operation_id: diadoc_post_template
@@ -943,7 +907,7 @@ endpoints:
   path: /PostTemplate
   scope: diadoc
   safety: write
-  summary:  Отправляет шаблон документов.
+  summary: Отправляет шаблон документов.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/PostTemplate.html
   pagination: none
 - operation_id: diadoc_post_template_patch
@@ -953,7 +917,7 @@ endpoints:
   path: /PostTemplatePatch
   scope: diadoc
   safety: write
-  summary:  Отправляет дополнение к шаблону документов.
+  summary: Отправляет дополнение к шаблону документов.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/PostTemplatePatch.html
   pagination: none
 - operation_id: diadoc_prepare_documents_to_sign
@@ -963,7 +927,7 @@ endpoints:
   path: /PrepareDocumentsToSign
   scope: diadoc
   safety: write
-  summary:  Подготавливает документы к подписанию.
+  summary: Подготавливает документы к подписанию.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/PrepareDocumentsToSign.html
   pagination: none
 - operation_id: diadoc_prevalidate_power_of_attorney
@@ -973,7 +937,7 @@ endpoints:
   path: /V2/PrevalidatePowerOfAttorney
   scope: diadoc
   safety: read
-  summary:  Выполняет предварительную проверку машиночитаемой доверенности (МЧД).
+  summary: Выполняет предварительную проверку машиночитаемой доверенности (МЧД).
   doc: https://developer.kontur.ru/doc/diadoc-api/http/PrevalidatePowerOfAttorney_V2.html
   pagination: none
 - operation_id: diadoc_recycle_draft
@@ -983,7 +947,7 @@ endpoints:
   path: /RecycleDraft
   scope: diadoc
   safety: destructive
-  summary:  Удаляет еще не утилизированные черновики .
+  summary: Удаляет еще не утилизированные черновики.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/RecycleDraft.html
   pagination: none
 - operation_id: diadoc_register
@@ -993,8 +957,7 @@ endpoints:
   path: /Register
   scope: diadoc
   safety: write
-  summary:  Находит или создает в Диадоке организацию по сертификату и добавляет владельца сертификата
-    в сотрудники этой организации.
+  summary: Находит или создает в Диадоке организацию по сертификату и добавляет владельца сертификата в сотрудники этой организации.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/Register.html
   pagination: none
 - operation_id: diadoc_register_confirm
@@ -1004,8 +967,7 @@ endpoints:
   path: /RegisterConfirm
   scope: diadoc
   safety: write
-  summary:  Подтверждает владение закрытым ключом сертификата для регистрации в организацию методом Register
-    .
+  summary: Подтверждает владение закрытым ключом сертификата для регистрации в организацию методом Register.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/RegisterConfirm.html
   pagination: none
 - operation_id: diadoc_register_power_of_attorney
@@ -1015,7 +977,7 @@ endpoints:
   path: /RegisterPowerOfAttorney
   scope: diadoc
   safety: write
-  summary:  Отправляет запрос на регистрацию машиночитаемой доверенности (МЧД).
+  summary: Отправляет запрос на регистрацию машиночитаемой доверенности (МЧД).
   doc: https://developer.kontur.ru/doc/diadoc-api/http/RegisterPowerOfAttorney.html
   pagination: none
 - operation_id: diadoc_register_power_of_attorney_result
@@ -1025,8 +987,7 @@ endpoints:
   path: /RegisterPowerOfAttorneyResult
   scope: diadoc
   safety: read
-  summary:  Возвращает результат регистрации машиночитаемой доверенности (МЧД), выполненной методом RegisterPowerOfAttorney
-    .
+  summary: Возвращает результат регистрации машиночитаемой доверенности (МЧД), выполненной методом RegisterPowerOfAttorney.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/RegisterPowerOfAttorneyResult.html
   pagination: none
 - operation_id: diadoc_restore
@@ -1036,7 +997,7 @@ endpoints:
   path: /Restore
   scope: diadoc
   safety: write
-  summary:  Восстанавливает документ из удаленных.
+  summary: Восстанавливает документ из удаленных.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/Restore.html
   pagination: none
 - operation_id: diadoc_search_docflows
@@ -1046,7 +1007,7 @@ endpoints:
   path: /V4/SearchDocflows
   scope: diadoc
   safety: read
-  summary:  Выполняет поиск документов по строке запроса.
+  summary: Выполняет поиск документов по строке запроса.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/SearchDocflows_V4.html
   pagination: none
 - operation_id: diadoc_search_fns_participants
@@ -1056,8 +1017,7 @@ endpoints:
   path: /SearchFnsParticipants
   scope: diadoc
   safety: read
-  summary:  Ищет участников электронного документооборота в роуминге по ИНН, КПП или идентификатору участника
-    ЭДО.
+  summary: Ищет участников электронного документооборота в роуминге по ИНН, КПП или идентификатору участника ЭДО.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/SearchFnsParticipants.html
   pagination: none
 - operation_id: diadoc_send_draft
@@ -1067,7 +1027,7 @@ endpoints:
   path: /SendDraft
   scope: diadoc
   safety: write
-  summary:  Отправляет сообщение , созданное из черновика .
+  summary: Отправляет сообщение, созданное из черновика.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/SendDraft.html
   pagination: none
 - operation_id: diadoc_send_fns_registration_message
@@ -1077,8 +1037,7 @@ endpoints:
   path: /SendFnsRegistrationMessage
   scope: diadoc
   safety: write
-  summary:  Отправляет заявление участника ЭДО для указанного ящика . Подробнее о заявлении участника
-    ЭДО — в статье .
+  summary: Отправляет заявление участника ЭДО для указанного ящика. Подробнее о заявлении участника ЭДО — в статье.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/SendFnsRegistrationMessage.html
   pagination: none
 - operation_id: diadoc_shelf_download
@@ -1088,7 +1047,7 @@ endpoints:
   path: /V2/ShelfDownload
   scope: diadoc
   safety: read
-  summary:  Загружает содержимое документа с полки документов .
+  summary: Загружает содержимое документа с полки документов.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/ShelfDownload.html
   pagination: none
 - operation_id: diadoc_shelf_upload
@@ -1098,9 +1057,7 @@ endpoints:
   path: /V2/ShelfUpload
   scope: diadoc
   safety: write
-  summary:  Загружает целиком содержимое документа на полку документов , генерирует для него имя и возвращает
-    это имя в ответе. Максимальный размер документа, который можно загрузить этим методом, — 3 МБ. Для
-    документов большего размера используйте методы ShelfUploadPartInit и ShelfUploadP
+  summary: Загружает целиком содержимое документа на полку документов, генерирует для него имя и возвращает это имя в ответе. Максимальный размер документа, который можно загрузить этим методом, — 3 МБ. Для документов большего размера используйте методы ShelfUploadPartInit и ShelfUploadP
   doc: https://developer.kontur.ru/doc/diadoc-api/http/ShelfUpload.html
   pagination: none
 - operation_id: diadoc_shelf_upload_part
@@ -1110,9 +1067,7 @@ endpoints:
   path: /ShelfUploadPart
   scope: diadoc
   safety: write
-  summary:  Загружает фрагмент содержимого документа на полку документов , если первая его часть уже
-    была загружена методом ShelfUploadPartInit . Размер одного фрагмента должен быть не больше 3 МБ, а
-    размер всего загружаемого документа — до 400 MB. Подробнее про загрузку документов на полк
+  summary: Загружает фрагмент содержимого документа на полку документов, если первая его часть уже была загружена методом ShelfUploadPartInit. Размер одного фрагмента должен быть не больше 3 МБ, а размер всего загружаемого документа — до 400 MB. Подробнее про загрузку документов на полк
   doc: https://developer.kontur.ru/doc/diadoc-api/http/ShelfUploadPart.html
   pagination: none
 - operation_id: diadoc_shelf_upload_part_init
@@ -1122,9 +1077,7 @@ endpoints:
   path: /ShelfUploadPartInit
   scope: diadoc
   safety: write
-  summary:  Загружает первый фрагмент документа на полку документов , генерирует для него имя и возвращает
-    это имя в ответе. Метод используется для загрузки файла большого объема по частям в связке с методом
-    ShelfUploadPart . Размер одного фрагмента должен быть не больше 3 МБ, а размер все
+  summary: Загружает первый фрагмент документа на полку документов, генерирует для него имя и возвращает это имя в ответе. Метод используется для загрузки файла большого объема по частям в связке с методом ShelfUploadPart. Размер одного фрагмента должен быть не больше 3 МБ, а размер все
   doc: https://developer.kontur.ru/doc/diadoc-api/http/ShelfUploadPartInit.html
   pagination: none
 - operation_id: diadoc_transform_template_to_message
@@ -1134,8 +1087,7 @@ endpoints:
   path: /TransformTemplateToMessage
   scope: diadoc
   safety: write
-  summary:  Создает из шаблона исходящее неотправленное сообщение . После создания сообщения пользователь
-    может подписать документы и отправить это сообщение с помощью метода PostMessagePatch (V4) .
+  summary: Создает из шаблона исходящее неотправленное сообщение. После создания сообщения пользователь может подписать документы и отправить это сообщение с помощью метода PostMessagePatch (V4).
   doc: https://developer.kontur.ru/doc/diadoc-api/http/TransformTemplateToMessage.html
   pagination: none
 - operation_id: diadoc_update_counteragent_group
@@ -1145,7 +1097,7 @@ endpoints:
   path: /UpdateCounteragentGroup
   scope: diadoc
   safety: write
-  summary:  Изменяет данные группы контрагентов .
+  summary: Изменяет данные группы контрагентов.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/UpdateCounteragentGroup.html
   pagination: none
 - operation_id: diadoc_update_department
@@ -1155,8 +1107,7 @@ endpoints:
   path: /admin/UpdateDepartment
   scope: diadoc
   safety: write
-  summary:  Примечание Вызов метода доступен только администраторам организации. Изменяет данные подразделения
-    организации.
+  summary: Примечание Вызов метода доступен только администраторам организации. Изменяет данные подразделения организации.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/UpdateDepartment_admin.html
   pagination: none
 - operation_id: diadoc_update_employee
@@ -1166,8 +1117,7 @@ endpoints:
   path: /UpdateEmployee
   scope: diadoc
   safety: write
-  summary:  Примечание Вызов метода доступен только администраторам организации. Изменяет данные сотрудника
-    организации.
+  summary: Примечание Вызов метода доступен только администраторам организации. Изменяет данные сотрудника организации.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/UpdateEmployee.html
   pagination: none
 - operation_id: diadoc_update_employee_power_of_attorney
@@ -1177,8 +1127,7 @@ endpoints:
   path: /V2/UpdateEmployeePowerOfAttorney
   scope: diadoc
   safety: write
-  summary:  Изменяет параметр машиночитаемой доверенности (МЧД) «Использовать по умолчанию». С помощью
-    этого метода можно установить для сотрудника МЧД по умолчанию или снять с МЧД признак по умолчанию.
+  summary: Изменяет параметр машиночитаемой доверенности (МЧД) «Использовать по умолчанию». С помощью этого метода можно установить для сотрудника МЧД по умолчанию или снять с МЧД признак по умолчанию.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/UpdateEmployeePowerOfAttorney_V2.html
   pagination: none
 - operation_id: diadoc_update_subscriptions
@@ -1188,7 +1137,6 @@ endpoints:
   path: /UpdateSubscriptions
   scope: diadoc
   safety: write
-  summary:  Примечание Вызов метода доступен только администраторам организации и пользователю, подписки
-    которого редактируются. Изменяет подписки сотрудника организации на почтовые уведомления.
+  summary: Примечание Вызов метода доступен только администраторам организации и пользователю, подписки которого редактируются. Изменяет подписки сотрудника организации на почтовые уведомления.
   doc: https://developer.kontur.ru/doc/diadoc-api/http/UpdateSubscriptions.html
   pagination: none

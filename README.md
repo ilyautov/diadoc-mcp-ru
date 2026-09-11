@@ -71,11 +71,25 @@ Claude Desktop, `claude_desktop_config.json`:
 
 ## Как это выглядит в чате
 
+Вы: входящие документы
+
 ```
-diadoc_search_methods("...")   поиск метода словами, а не по имени эндпоинта
-diadoc_describe_method(...)    параметры, пагинация, класс доступа
-diadoc_call_method(...)        вызов; запись спрашивает подтверждение
+diadoc_search_methods("входящие документы")
+  diadoc_get_document          GET  /V3/GetDocument      чтение
+  diadoc_get_documents         GET  /V3/GetDocuments     чтение
+  diadoc_get_document_actions  GET  /GetDocumentActions  чтение
+
+diadoc_describe_method("diadoc_get_document")
+  Возвращает данные документа по указанному идентификатору.
+  GET diadoc-api.kontur.ru/V3/GetDocument
+  параметры: нет
+  класс доступа: чтение
+
+diadoc_call_method("diadoc_get_document", {})
 ```
+
+Три инструмента вместо 114 функций: агент ищет метод словами,
+читает его карточку и вызывает. Запись и необратимое спрашивают подтверждение.
 
 Что обычно просят:
 
