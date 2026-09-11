@@ -1,0 +1,35 @@
+[project]
+name = "diadoc-mcp-ru"
+version = "0.1.0"
+description = "API Диадока для ИИ-ассистентов: входящие и исходящие документы, статусы документооборота, контрагенты и приглашения к ЭДО, подписание, МЧД, печатные формы"
+keywords = ["mcp", "model-context-protocol", "diadoc", "диадок", "kontur", "edi", "эдо", "russia", "claude"]
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Ilya Utov" }]
+dependencies = [
+    # Ядро живёт отдельным пакетом: пять серверов делят его, а не копируют.
+    "ru-mcp-core>=0.1.0,<1",
+]
+
+[project.urls]
+Repository = "https://github.com/ilyautov/diadoc-mcp-ru"
+Issues = "https://github.com/ilyautov/diadoc-mcp-ru/issues"
+Changelog = "https://github.com/ilyautov/diadoc-mcp-ru/blob/main/CHANGELOG.md"
+
+[project.scripts]
+diadoc-mcp-ru = "diadoc_mcp.server:cli"
+diadoc-mcp = "diadoc_mcp.server:cli"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-asyncio>=0.23"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["diadoc_mcp"]
+
+[tool.setuptools.package-data]
+diadoc_mcp = ["endpoints.yaml"]

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ilyautov/diadoc-mcp-ru",
+  "title": "Диадок MCP (RU) — ЭДО, документы, контрагенты",
+  "description": "API Диадока для ИИ-ассистентов: входящие и исходящие документы, статусы документооборота, контрагенты и приглашения к ЭДО, подписание, МЧД, печатные формы.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/ilyautov/diadoc-mcp-ru",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "diadoc-mcp-ru",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "DIADOC_CLIENT_ID",
+          "description": "Идентификатор приложения Диадок, выдаёт Контур.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DIADOC_TOKEN",
+          "description": "Токен пользователя Диадок, выдаёт метод Authenticate.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
