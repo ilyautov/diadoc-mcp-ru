@@ -14,6 +14,12 @@ API Диадока для ИИ-ассистентов: входящие и ис�
 [![Install in VS Code](https://img.shields.io/badge/VS_Code-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-0098FF?logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=diadoc&config=%7B%22command%22%3A%20%22uvx%22%2C%20%22args%22%3A%20%5B%22diadoc-mcp-ru%22%5D%2C%20%22env%22%3A%20%7B%22DIADOC_CLIENT_ID%22%3A%20%22%24%7Binput%3Adiadoc_client_id%7D%22%2C%20%22DIADOC_TOKEN%22%3A%20%22%24%7Binput%3Adiadoc_token%7D%22%7D%7D&inputs=%5B%7B%22id%22%3A%20%22diadoc_client_id%22%2C%20%22type%22%3A%20%22promptString%22%2C%20%22description%22%3A%20%22%D0%98%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%94%D0%B8%D0%B0%D0%B4%D0%BE%D0%BA%2C%20%D0%B2%D1%8B%D0%B4%D0%B0%D1%91%D1%82%20%D0%9A%D0%BE%D0%BD%D1%82%D1%83%D1%80.%22%7D%2C%20%7B%22id%22%3A%20%22diadoc_token%22%2C%20%22type%22%3A%20%22promptString%22%2C%20%22description%22%3A%20%22%D0%A2%D0%BE%D0%BA%D0%B5%D0%BD%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20%D0%94%D0%B8%D0%B0%D0%B4%D0%BE%D0%BA%2C%20%D0%B2%D1%8B%D0%B4%D0%B0%D1%91%D1%82%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%20Authenticate.%22%2C%20%22password%22%3A%20true%7D%5D)
 [![Install in Cursor](https://img.shields.io/badge/Cursor-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-000000?logo=cursor&logoColor=white)](https://cursor.com/en/install-mcp?name=diadoc&config=eyJjb21tYW5kIjogInV2eCIsICJhcmdzIjogWyJkaWFkb2MtbWNwLXJ1Il0sICJlbnYiOiB7IkRJQURPQ19DTElFTlRfSUQiOiAiIiwgIkRJQURPQ19UT0tFTiI6ICIifX0=)
 
+<p align="center">
+  <a href="https://business-mcp-ru.aifrontier.tech/">
+    <img src="assets/social-preview.png" alt="diadoc-mcp-ru: API Диадока (Контур) в ИИ-ассистенте. 114 методов, поиск метода словами, гейт безопасности перед записью" width="760">
+  </a>
+</p>
+
 Каталог собран из первоисточника (документация `developer.kontur.ru/doc/diadoc-api`) и лежит в репозитории как
 `diadoc_mcp/endpoints.yaml`: **114 методов**, из них 78 на чтение,
 29 на запись и 7 необратимых. Сервер исполняет ровно этот файл,
