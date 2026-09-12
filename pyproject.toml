@@ -1,6 +1,6 @@
 [project]
 name = "diadoc-mcp-ru"
-version = "0.2.0"
+version = "0.2.1"
 description = "API Диадока для ИИ-ассистентов: входящие и исходящие документы, статусы документооборота, контрагенты и приглашения к ЭДО, подписание, МЧД, печатные формы"
 keywords = ["mcp", "model-context-protocol", "diadoc", "диадок", "kontur", "edi", "эдо", "russia", "claude"]
 readme = "README.md"
@@ -13,6 +13,8 @@ dependencies = [
 ]
 
 [project.urls]
+Homepage = "https://business-mcp-ru.aifrontier.tech/"
+Documentation = "https://business-mcp-ru.aifrontier.tech/diadoc-api.html"
 Repository = "https://github.com/ilyautov/diadoc-mcp-ru"
 Issues = "https://github.com/ilyautov/diadoc-mcp-ru/issues"
 Changelog = "https://github.com/ilyautov/diadoc-mcp-ru/blob/main/CHANGELOG.md"
