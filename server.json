@@ -3,7 +3,8 @@
   "name": "io.github.ilyautov/diadoc-mcp-ru",
   "title": "Диадок MCP (RU) — ЭДО, документы, контрагенты",
   "description": "API Диадока в ИИ-ассистенте: документы ЭДО, контрагенты, подписание, МЧД",
-  "version": "0.2.1",
+  "version": "0.2.2",
+  "websiteUrl": "https://business-mcp-ru.aifrontier.tech/diadoc-api.html",
   "repository": {
     "url": "https://github.com/ilyautov/diadoc-mcp-ru",
     "source": "github"
@@ -13,7 +14,7 @@
       "registryType": "pypi",
       "registryBaseUrl": "https://pypi.org",
       "identifier": "diadoc-mcp-ru",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"
