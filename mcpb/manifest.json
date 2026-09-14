@@ -1,0 +1,70 @@
+{
+  "manifest_version": "0.3",
+  "name": "diadoc-mcp-ru",
+  "display_name": "Диадок (Контур): документы и ЭДО (diadoc-mcp-ru)",
+  "version": "0.2.2",
+  "description": "API Диадока прямо в Claude: входящие и исходящие документы, статусы документооборота, контрагенты и приглашения к ЭДО, подписание, МЧД, печатные формы.",
+  "long_description": "Подключает ассистента к API Диадока по вашим ключам. Каталог из 114 методов, чтение идёт сразу, запись и необратимое действие требуют подтверждения. Ключи хранятся локально и в чат не попадают.",
+  "author": {
+    "name": "Ilya Utov",
+    "url": "https://github.com/ilyautov"
+  },
+  "homepage": "https://business-mcp-ru.aifrontier.tech/diadoc-api.html",
+  "documentation": "https://github.com/ilyautov/diadoc-mcp-ru/blob/main/README.md",
+  "support": "https://github.com/ilyautov/diadoc-mcp-ru/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ilyautov/diadoc-mcp-ru"
+  },
+  "license": "MIT",
+  "privacy_policies": [
+    "https://business-mcp-ru.aifrontier.tech/privacy.html"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "diadoc",
+    "диадок",
+    "kontur",
+    "edi",
+    "эдо",
+    "russia",
+    "claude"
+  ],
+  "server": {
+    "type": "python",
+    "entry_point": "server/serve.py",
+    "mcp_config": {
+      "command": "python",
+      "args": [
+        "${__dirname}/server/serve.py",
+        "diadoc"
+      ],
+      "env": {
+        "DIADOC_CLIENT_ID": "${user_config.diadoc_client_id}",
+        "DIADOC_TOKEN": "${user_config.diadoc_token}"
+      }
+    }
+  },
+  "user_config": {
+    "diadoc_client_id": {
+      "type": "string",
+      "title": "Идентификатор приложения Диадока",
+      "description": "Запрашивается у Контура: diadoc-api@skbkontur.ru.",
+      "sensitive": false,
+      "required": true
+    },
+    "diadoc_token": {
+      "type": "string",
+      "title": "Токен пользователя Диадока",
+      "description": "Выдаёт метод Authenticate API Диадока.",
+      "sensitive": true,
+      "required": true
+    }
+  },
+  "compatibility": {
+    "runtimes": {
+      "python": ">=3.10"
+    }
+  }
+}
