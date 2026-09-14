@@ -130,3 +130,9 @@ MIT. Автор [Илья Утов](https://github.com/ilyautov).
 
 Все проекты одним списком, разобранные по назначению:
 [ilyautov.github.io](https://ilyautov.github.io/).
+
+## Privacy Policy
+
+diadoc-mcp-ru не собирает и не передаёт ваши данные: ключи лежат локально в
+`~/.ru-mcp/cabinets.json`, запросы идут только в API Диадок (Контур), телеметрии нет.
+Полный текст: [PRIVACY_POLICY.md](https://github.com/ilyautov/diadoc-mcp-ru/blob/main/PRIVACY_POLICY.md).
