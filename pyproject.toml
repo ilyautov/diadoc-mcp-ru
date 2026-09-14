@@ -1,6 +1,6 @@
 [project]
 name = "diadoc-mcp-ru"
-version = "0.2.2"
+version = "0.3.0"
 description = "API Диадока для ИИ-ассистентов: входящие и исходящие документы, статусы документооборота, контрагенты и приглашения к ЭДО, подписание, МЧД, печатные формы"
 keywords = ["mcp", "model-context-protocol", "diadoc", "диадок", "kontur", "edi", "эдо", "russia", "claude"]
 readme = "README.md"
@@ -9,7 +9,7 @@ license = "MIT"
 authors = [{ name = "Ilya Utov" }]
 dependencies = [
     # Ядро живёт отдельным пакетом: пять серверов делят его, а не копируют.
-    "schema-mcp-core>=0.2.0,<1",
+    "schema-mcp-core>=0.3.0,<1",
 ]
 
 [project.urls]
