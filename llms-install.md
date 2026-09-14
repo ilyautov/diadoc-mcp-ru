@@ -52,7 +52,8 @@ uvx diadoc-mcp-ru doctor
 показывает. Установка удалась, если в выводе есть строка с числом методов.
 
 После перезапуска клиента у агента появляются инструменты `diadoc_search_methods`,
-`diadoc_describe_method`, `diadoc_call_method`, `diadoc_map` и кабинеты. Начинать
+`diadoc_describe_method`, `diadoc_call_method` (чтение),
+`diadoc_write_method`, `diadoc_delete_method`, `diadoc_map` и кабинеты. Начинать
 стоит с `diadoc_map`: он показывает разделы каталога и не требует ключей.
 
 ## Что может пойти не так
