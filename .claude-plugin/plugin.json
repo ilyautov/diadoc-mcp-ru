@@ -1,0 +1,43 @@
+{
+  "name": "diadoc-mcp-ru",
+  "displayName": "Kontur Diadoc API (unofficial)",
+  "version": "0.3.0",
+  "description": "API Диадока прямо в Claude: входящие и исходящие документы, статусы документооборота, контрагенты и приглашения к ЭДО, подписание, МЧД, печатные формы.",
+  "author": {
+    "name": "Ilya Utov",
+    "url": "https://github.com/ilyautov"
+  },
+  "homepage": "https://business-mcp-ru.aifrontier.tech/diadoc-api.html",
+  "repository": "https://github.com/ilyautov/diadoc-mcp-ru",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "diadoc",
+    "диадок",
+    "kontur",
+    "edi",
+    "эдо",
+    "russia",
+    "claude"
+  ],
+  "privacyPolicyUrl": "https://business-mcp-ru.aifrontier.tech/privacy.html",
+  "supportUrl": "https://github.com/ilyautov/diadoc-mcp-ru/issues",
+  "documentationUrl": "https://github.com/ilyautov/diadoc-mcp-ru#readme",
+  "userConfig": {
+    "diadoc_client_id": {
+      "type": "string",
+      "title": "Идентификатор приложения Диадока",
+      "description": "Запрашивается у Контура: diadoc-api@skbkontur.ru.",
+      "required": true,
+      "sensitive": false
+    },
+    "diadoc_token": {
+      "type": "string",
+      "title": "Токен пользователя Диадока",
+      "description": "Выдаёт метод Authenticate API Диадока.",
+      "required": true,
+      "sensitive": true
+    }
+  }
+}

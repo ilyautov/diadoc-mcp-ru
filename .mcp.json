@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "diadoc": {
+      "command": "python3",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/serve.py",
+        "diadoc"
+      ],
+      "env": {
+        "DIADOC_CLIENT_ID": "${user_config.diadoc_client_id}",
+        "DIADOC_TOKEN": "${user_config.diadoc_token}"
+      }
+    }
+  }
+}
